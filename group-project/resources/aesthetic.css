@@ -7,18 +7,25 @@ h1 {
 
 h2 {
   text-align: center;
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Hind', sans-serif;
+  font-size: 30px;
 }
 
 body {
   background-color: white;
 }
 
+#page {
+  margin-right: 200px;
+  margin-left: 200px;
+
+}
+
 p {
   color: black;
   text-align: center;
-  font-family: 'Bellefair';
-  font-size: 25px;
+  font-family: 'Dosis';
+  font-size: 20px;
 }
 
 #navigation {
@@ -26,14 +33,17 @@ p {
     display: flex;
     list-style-type: none;
     margin: auto;
-    padding: 7px 20px;
-    font-size: 18px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 7px 50px;
+    font-size: 20px;
     font-family: 'Cabin', sans-serif;
     font-weight: bold;
     justify-content: space-around;
     background-color: #001BD9;
     overflow: hidden;
     border: none;
+    border-radius: 10px;
 
   }
 
