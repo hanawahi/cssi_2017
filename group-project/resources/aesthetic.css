@@ -1,7 +1,46 @@
+h1 {
+  color: #001BD9;
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Hind', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Cabin', sans-serif;
+}
+
 body {
   background-color: white;
 }
 
 p {
   color: black;
+  text-align: center;
+  font-family: 'Bellefair';
+  font-size: 25px;
+}
+
+#navigation {
+    color: white;
+    display: flex;
+    list-style-type: none;
+    margin: auto;
+    padding: 7px 20px;
+    font-size: 18px;
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+    justify-content: space-around;
+    background-color: #001BD9;
+    overflow: hidden;
+    border: none;
+
+  }
+
+
+.nav {
+    display: inline;
+    color: white;
+    text-decoration: none;
+    font-family: 'Hind', sans-serif;
 }

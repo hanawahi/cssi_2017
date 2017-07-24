@@ -10,6 +10,7 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
         template = env.get_template('welcome.html')
         self.response.out.write(template.render())
+        
 
 #VentBot
 class VentHandler(webapp2.RequestHandler):
