@@ -3,15 +3,26 @@
 <html>
   <head>
     <title>Resources</title>
-    <link rel = "stylesheet" href = "resources/aesthetic.css">
-    <!--Link template, scripts (js), and styles here. --->
+    <link rel = "stylesheet" href = "../resources/aesthetic.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../resources/resources.js"></script>
 
+    <!--Link template, scripts (js), and styles here. --->
   </head>
 
-
   <body>
-    <p> Here's the directoryish thing for info and pages
-      on mental health resources. </p>
+  <h1 id=info_title> Resources </h1>
+  <h2 id=instructions> Click on the following buttons below to learn more about mental health. </h2>
+  <table>
+    <td id="drug_abuse" onclick="location.href='drug_abuse'" class="">title</td>
+    <td id="depression" onclick="location.href='depression'" class="">Suicide/Depression</td>
+</table>
+<table>
+<td id="stress" onclick="location.href='stress'" class="">Stress</td>
+<td id="eating_disorder" onclick="location.href='eating_disorder'" class="">Eating Disorder</td>
+</table>
+
 
   </body>
+
 </html>

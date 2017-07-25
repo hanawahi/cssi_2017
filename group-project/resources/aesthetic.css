@@ -123,3 +123,70 @@ padding-left: 550px;
 font-family: 'Hind', sans-serif;
 padding-left: 585px;
 }
+
+.left_angled{
+  transform: rotate(-10deg);
+}
+
+.right_angled{
+  transform: rotate(10deg);
+}
+
+#drug_abuse {
+  margin-right: 100px;
+  height: 500px;
+  width: 1000px;
+  text-align: center;
+  background-image: url('../images/drugs.png');
+  background-position: center;
+  background-color: rgb(145, 211, 217);
+  background-size: 100px;
+  border: 2px rgb(0,167,157) solid;
+  border-radius: 10px;
+}
+
+#depression {
+  height: 500px;
+  width: 500px;
+  text-align: center;
+  background-image: url('../images/depression.png');
+  background-color: rgb(145, 211, 217);
+  background-size: auto;
+  background-position: center;
+  background-size: 100px;
+  border: 2px rgb(126,93,136) solid;
+  border-radius: 10px;
+}
+
+#stress {
+  height: 500px;
+  width: 500px;
+  text-align: center;
+  background-image: url('../images/stress.png');
+  background-position: center;
+  background-size: cover;
+  background-size: 100px;
+  background-color: rgb(145, 211, 217);
+  border: 2px rgb(255,203,4) solid;
+  border-radius: 10px;
+}
+
+#eating_disorder {
+  height: 500px;
+  width: 500px;
+  text-align: center;
+  background-image: url('../images/eating_disorder.png');
+  background-color: rgb(145, 211, 217);
+  background-position: center;
+  background-size: 100px;
+  border: 2px rgb(27,117,187) solid;
+  border-radius: 10px;
+}
+
+#info_title{
+  text-align: center;
+}
+
+#instructions{
+  text-align: center;
+}
