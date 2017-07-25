@@ -33,11 +33,6 @@ class ResourceHandler(webapp2.RequestHandler):
         template = env.get_template('info.html')
         self.response.out.write(template.render())
 
-class MatchHandler(webapp2.RequestHandler):
-    def get(self):
-        template = env.get_template('listener.html')
-        self.response.out.write(template.render())
-
 class SubmitHandler(webapp2.RequestHandler):
     def get(self):
         template_vars = { 'name_of_game': self.request.get('game') }
@@ -47,11 +42,6 @@ class SubmitHandler(webapp2.RequestHandler):
         results_template = env.get_template('submit.html')
         template_variables = {
             'q1':self.request.get("q1"),
-            'activity':self.request.get("activity"),
-            'teacher':self.request.get("teacher"),
-            'celebrity':self.request.get("celebrity"),
-            'show':self.request.get("show"),
-            'fun':self.request.get("fun"),
             }
         self.response.out.write(results_template.render(template_variables))
 
@@ -59,10 +49,10 @@ class SubmitHandler(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
+    ('/welcome', MainHandler),
     ('/ventbot', VentHandler),
     ('/quiz', QuizHandler),
     ('/chillroom', RoomHandler),
     ('/resources', ResourceHandler),
-    ('/match', MatchHandler),
     ('/submit', SubmitHandler)
     ], debug=True)
