@@ -5,12 +5,112 @@
     <title>VentBot</title>
     <link rel = "stylesheet" href = "resources/aesthetic.css">
     <!--Link template, scripts (js), and styles here. --->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="../resources/textbox.js"></script>
+
 
   </head>
 
 
   <body>
-    <p> This will be the VentBot! </p>
+    <h1>Unclutter</h1>
+    <p> Welcome to Unclutter! One helpful technique that
+    has been proven to help students destress is to unclutter their
+    thoughts by writing them down, and then throwing it away. This works
+    the same way venting to a friend does-- it feels great to just get
+    things out.
+    </p>
+    <p> The way Unclutter works is simple: we will pitch you prompts
+      and you can respond in any way you'd like-- write as little or as
+      much as you desire. When you are finished with the prompt, you have
+      the decision to 'burn' your response-- don't worry, we don't save
+      any responses-- or opt to save it to a text file downloaded to your
+      computer, for yourself. If you don't like the prompt you are thrown,
+      you can most definitely generate a new one! </p>
+
+      <p> Give it a try! </p>
+
+
+
+      <span id = "prompt">  </span>
+
+      <!--
+      <form id="comment-form" action="javascript:void(0);">
+       <textarea id="comment-content" name="content"></textarea>
+       <input type="submit" value="Done">
+
+
+
+     </form>
+
+
+   <h2>Your Entry:</h2>
+     <div id="comments">
+       <p id="no-comments">You haven't entered your prompt yet.</p>
+       <button id="download" type = 'button'>Download Response</button>
+<script> $("#download").hide(); </script>
+
+-->
+
+
+<!--//Downloading-->
+<script>
+function download(filename, text) {
+  var element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+  element.setAttribute('download', filename);
+
+  element.style.display = 'none';
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
+}
+</script>
+<!--download button end-->
+
+
+<form onsubmit="download(this['name'].value, this['text'].value)">
+  <textarea name="text"></textarea>
+  <br><br>
+  <input type="text" name="name" value="nameyourfile.txt">
+  <input type="submit" value="Download">
+
+  <button id="generate" type="button">Generate New</button>
+
+
+<!--//'Generate New' button -->
+  <script>
+  var prompts = ["How was your day today?",
+                "Describe one memory that makes you happy.",
+                "What was the highlight of your past week?",
+                "When you're feeling down, what do you normally do to feel better? Describe it.",
+                "What's your morning routine?"];
+  var n = getInt();
+  var randPrompt = String(prompts[n]);
+  $('#generate').click((event) => {
+    n = getInt();
+    randPrompt = String(prompts[n]);
+    event.preventDefault();
+    //location.reload();
+    $('#prompt').html(randPrompt);
+    //$("#download").hide();
+
+      });
+
+//random int generator.
+   function getInt() {
+        return Math.floor(Math.random() * (2 - 0 + 1)) + 0;
+}
+  </script>
+<!--//end generate new button -->
+</form>
+
+
+
+
+
 
   </body>
 </html>

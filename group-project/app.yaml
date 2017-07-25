@@ -13,6 +13,10 @@ handlers:
   static_files: resources/aesthetic.css
   upload: resources/aesthetic\.css
 
+- url: /resources/textbox\.js
+  static_files: resources/textbox.js
+  upload: resources/textbox\.js
+
 - url: .*
   script: main.app
 
