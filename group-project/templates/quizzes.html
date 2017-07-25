@@ -3,14 +3,169 @@
 <html>
   <head>
     <title>Quizzes</title>
-    <link rel = "stylesheet" href = "resources/aesthetic.css">
+
+    <link rel="stylesheet" href="../resources/aesthetic.css">
     <!--Link template, scripts (js), and styles here. --->
+
+    <script type="text/javascript" src="../resources/quizzes.js"></script>
+
+
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Cabin|Hind|Dosis');
+    </style>
 
   </head>
 
 
   <body>
-    <p> Quizzes will be put in here. </p>
+
+    <h1>College Confidence</h1>
+
+    {% include "navigation.html" %}
+
+    <h2>What kind of help is right for you?</h2>
+
+    <h2>Take the Quiz!</h2>
+
+    <p class="disclaimer"><strong>DISCLAIMER:</strong></p>
+
+    <p class="legal"><i> This quiz is not for diagnostic purposes. <br>
+      The purpose of this quiz is to help find the right kind of help for you, if any.<br>
+      <strong>Always seek help from a certified medical professional.</strong></i></p>
+
+      <br>
+
+    <form action="/submit" method="post">
+
+    <p class="question">1. How are you feeling right now?</p>
+        <ul class="answers">
+        <input type="radio" name="q1" value="ok" id="q1a"><label for="q1a">Ok</label><br/>
+        <input type="radio" name="q1" value="depression" id="q1b"><label for="q1b">Sad</label><br/>
+        <input type="radio" name="q1" value="anxiety" id="q1c"><label for="q1c">Anxious or worried</label><br/>
+        <input type="radio" name="q1" value="depression" id="q1d"><label for="q1d">Lonely</label><br/>
+        </ul>
+
+    <p class="question">2. What's on your mind?</p>
+        <ul class="answers">
+        <input type="radio" name="q2" value="anxiety" id="q2a"><label for="q2a">I'm stressing out!</label><br/>
+        <input type="radio" name="q2" value="anorexia" id="q2b"><label for="q2b">I'm worrying about my weight.</label><br/>
+        <input type="radio" name="q2" value="depression" id="q2c"><label for="q2c">I'm just sad.</label><br/>
+        <input type="radio" name="q2" value="ok" id="q2d"><label for="q2d">I'm not really worried about anything.</label><br/>
+        </ul>
+
+    <p class="question">3. Do you often find yourself feeling more nervous or restless than others?</p>
+        <ul class="answers">
+        <input type="radio" name="q3" value="anxiety" id="q3a"><label for="q3a">Yes.</label><br/>
+        <input type="radio" name="q3" value="ok" id="q3b"><label for="q3b">No.</label><br/>
+        </ul>
+
+    <p class="question">4. Do you ever feel so guilty about eating that it causes you to skip meals?</p>
+        <ul class="answers">
+        <input type="radio" name="q4" value="anorexia" id="q4a"><label for="q4a">Yes.</label><br/>
+        <input type="radio" name="q4" value="ok" id="q4b"><label for="q4b">No.</label><br/>
+        </ul>
+
+    <p class="question">5. Do you often experience difficulty concentrating or remembering details?</p>
+        <ul class="answers">
+        <input type="radio" name="q5" value="depression" id="q5a"><label for="q5a">Yes.</label><br/>
+        <input type="radio" name="q5" value="ok" id="q5b"><label for="q5b">No.</label><br/>
+        </ul>
+
+    <p class="question">6. Have you ever fainted or felt dizzy?</p>
+        <ul class="answers">
+        <input type="radio" name="q6" value="anorexia" id="q6a"><label for="q6a">Yes.</label><br/>
+        <input type="radio" name="q6" value="ok" id="q6b"><label for="q6b">No.</label><br/>
+        </ul>
+
+    <p class="question">7. Have you had suicidal thoughts or feelings of worthlessness?</p>
+        <ul class="answers">
+        <input type="radio" name="q7" value="depression" id="q7a"><label for="q7a">Yes.</label><br/>
+        <input type="radio" name="q7" value="ok" id="q7b"><label for="q7b">No.</label><br/>
+        </ul>
+
+    <p class="question">8. Have you lost interest in hobbies or activities you once enjoyed?</p>
+        <ul class="answers">
+        <input type="radio" name="q8" value="depression" id="q8a"><label for="q8a">Yes.</label><br/>
+        <input type="radio" name="q8" value="ok" id="q8b"><label for="q8b">No.</label><br/>
+        </ul>
+
+    <p class="question">9. Do you experience extreme sweating, trembling, or an increased heart rate?</p>
+        <ul class="answers">
+        <input type="radio" name="q9" value="anxiety" id="q9a"><label for="q9a">Yes.</label><br/>
+        <input type="radio" name="q9" value="ok" id="q9b"><label for="q9b">No.</label><br/>
+        </ul>
+
+    <p class="question">10. Do you ever breathe rapidly (hyperventilate) or have trouble breathing?</p>
+        <ul class="answers">
+        <input type="radio" name="q10" value="anxiety" id="q10a"><label for="q10a">Yes.</label><br/>
+        <input type="radio" name="q10" value="ok" id="q10b"><label for="q10b">No.</label><br/>
+        </ul>
+
+
+    <input type="submit" value="Submit" id="submit">
+
+    </form>
+
+
+    <br/>
+
+
+
+    <div id="category1">
+    <p>
+    <strong>Question 1:</strong> The correct answer is the <strong>Answer 1</strong>.</p>
+    </div>
+
+    <div id="category2">
+    <p>
+    <strong>Question 2:</strong> The correct answer is <strong>Answer 2</strong>.</p>
+    </div>
+
+    <div id="category3">
+    <p>
+    <strong>Question 3:</strong> The correct answer is <strong>Answer 3</strong>.</p>
+    </div>
+
+    <div id="category4">
+    <p>
+    <strong>Question 4:</strong> The correct answer is <strong>Answer 4</strong>.</p>
+    </div>
+
+    <div id="category5">
+    <p>
+    <strong>Question 5:</strong> The correct answer is <strong>Answer 1</strong>.</p>
+    </div>
+
+    <div id="category6">
+    <p>
+    <strong>Question 6:</strong> The correct answer is <strong>Answer 2</strong>.</p>
+    </div>
+
+    <div id="category7">
+    <p>
+    <strong>Question 7:</strong> The correct answer is <strong>Answer 3</strong>.</p>
+    </div>
+
+    <div id="category8">
+    <p>
+    <strong>Question 8:</strong> The correct answer is <strong>Answer 4</strong>.</p>
+    </div>
+
+    <div id="category9">
+    <p>
+    <strong>Question 9:</strong> The correct answer is <strong>Answer 1</strong>.</p>
+    </div>
+
+    <div id="category10">
+    <p>
+    <strong>Question 10:</strong> The correct answer is <strong>Answer 2</strong>.</p>
+    </div>
+
+    <div id="category11">
+    <p>
+    You answered them all right!</p>
+    </div>
+
 
   </body>
 </html>
