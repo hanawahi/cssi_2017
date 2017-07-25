@@ -135,20 +135,27 @@ padding-left: 585px;
 #drug_abuse {
   margin-right: 100px;
   height: 500px;
-  width: 1000px;
+  width: 500px;
   text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 50px;
   background-image: url('../images/drugs.png');
   background-position: center;
   background-color: rgb(145, 211, 217);
   background-size: 100px;
   border: 2px rgb(0,167,157) solid;
   border-radius: 10px;
+
 }
 
 #depression {
   height: 500px;
   width: 500px;
   text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 50px;
   background-image: url('../images/depression.png');
   background-color: rgb(145, 211, 217);
   background-size: auto;
@@ -162,6 +169,9 @@ padding-left: 585px;
   height: 500px;
   width: 500px;
   text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 50px;
   background-image: url('../images/stress.png');
   background-position: center;
   background-size: cover;
@@ -175,6 +185,9 @@ padding-left: 585px;
   height: 500px;
   width: 500px;
   text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
   background-image: url('../images/eating_disorder.png');
   background-color: rgb(145, 211, 217);
   background-position: center;
@@ -189,4 +202,25 @@ padding-left: 585px;
 
 #instructions{
   text-align: center;
+}
+
+
+
+#index table{
+  position: absolute;
+  font-size: 25px;
+  table-layout: fixed;
+  border-spacing: 20px;
+  color: white;
+}
+
+#index td {
+  cursor: pointer;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+#index {
+  margin-left: 100px;
+  margin-bottom: 100px;
 }
