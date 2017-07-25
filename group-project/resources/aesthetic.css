@@ -55,6 +55,19 @@ p {
     font-family: 'Hind', sans-serif;
 }
 
+.disclaimer {
+    color: red;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 20px;
+}
+
+.legal {
+  margin-left: 300px;
+  margin-right: 300px;
+  font-size: 18px;
+}
+
 .answers li {
 list-style: upper-alpha;
 }
@@ -68,10 +81,13 @@ cursor: pointer;
 background: #dddada;
 color: 000000;
 padding: 3px;
+margin-left: 600px;
+margin-bottom: 50px;
 text-align: center;
 width: 200px;
 cursor: pointer;
 border: 1px solid gray;
+font-family: 'Hind', sans-serif;
 }
 
 #results:hover {
@@ -100,8 +116,10 @@ font-style: italic;
 
 .question {
 text-align: left;
+padding-left: 550px;
 }
 
 .answers {
 font-family: 'Hind', sans-serif;
+padding-left: 585px;
 }

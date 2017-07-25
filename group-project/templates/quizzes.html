@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="../resources/aesthetic.css">
     <!--Link template, scripts (js), and styles here. --->
 
+    <script type="text/javascript" src="../resources/quizzes.js"></script>
+    <script type="text/javascript" src="../resources/quizzes2.js"></script>
+
     <style>
 @import url('https://fonts.googleapis.com/css?family=Cabin|Hind|Dosis');
     </style>
@@ -31,33 +34,48 @@
 
     <h2>Take the Quiz!</h2>
 
-    <p><i>DISCLAIMER: This quiz is not for diagnostic purposes.
-      The purpose of this quiz is to help you find the right kind of help for you.
-      Always seek help from a certified medical professional.</i></p>
+    <p class="disclaimer"><strong>DISCLAIMER:</strong></p>
+
+    <p class="legal"><i> This quiz is not for diagnostic purposes. <br>
+      The purpose of this quiz is to help find the right kind of help for you, if any.<br>
+      <strong>Always seek help from a certified medical professional.</strong></i></p>
 
       <br>
 
+    <form action="/submit" method="post">
+
     <p class="question">1. How are you feeling right now?</p>
         <ul class="answers">
-        <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">I'm ok.</label><br/>
-        <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Sad</label><br/>
-        <input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Anxious and worried</label><br/>
-        <input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Happy!</label><br/>
+        <input type="radio" name="q1" value="ok" id="q1a"><label for="q1a">I'm ok.</label><br/>
+        <input type="radio" name="q1" value="depression" id="q1b"><label for="q1b">Sad</label><br/>
+        <input type="radio" name="q1" value="anxiety" id="q1c"><label for="q1c">Anxious and worried</label><br/>
+        <input type="radio" name="q1" value="social" id="q1d"><label for="q1d">I feel lonely.</label><br/>
         </ul>
 
     <p class="question">2. What's on your mind?</p>
         <ul class="answers">
-        <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">I'm stressing about exams.</label><br/>
-        <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">I'm worrying about my weight.</label><br/>
-        <input type="radio" name="q1" value="c" id="q1c"><label for="q1c">I'm just sad.</label><br/>
-        <input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Other</label><br/>
+        <input type="radio" name="q2" value="anxiety" id="q2a"><label for="q1a">I'm stressing about exams.</label><br/>
+        <input type="radio" name="q2" value="anorexia" id="q2b"><label for="q1b">I'm worrying about my weight.</label><br/>
+        <input type="radio" name="q2" value="depression" id="q2c"><label for="q1c">I'm just sad.</label><br/>
+        <input type="radio" name="q2" value="ok" id="q2d"><label for="q1d">I'm not really worried about anything.</label><br/>
         </ul>
+
+    <p class="question">2. What's on your mind?</p>
+        <ul class="answers">
+        <input type="radio" name="q2" value="anxiety" id="q2a"><label for="q1a">I'm stressing about exams.</label><br/>
+        <input type="radio" name="q2" value="anorexia" id="q2b"><label for="q1b">I'm worrying about my weight.</label><br/>
+        <input type="radio" name="q2" value="depression" id="q2c"><label for="q1c">I'm just sad.</label><br/>
+        <input type="radio" name="q2" value="ok" id="q2d"><label for="q1d">I'm not really worried about anything.</label><br/>
+        </ul>
+
+    <input type="submit" value="submit">
+
+    </form>
+
 
     <br/>
 
-    <div id="results">
-    Submit
-    </div>
+
 
     <div id="category1">
     <p>

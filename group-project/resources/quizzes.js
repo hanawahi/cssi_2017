@@ -1,3 +1,6 @@
+//window.alert("Hello from Javascript!");
+
+
 $(document).ready(function()
 {    $("#results").click(function() {
 

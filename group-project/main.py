@@ -10,7 +10,7 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
         template = env.get_template('welcome.html')
         self.response.out.write(template.render())
-        
+
 
 #VentBot
 class VentHandler(webapp2.RequestHandler):
@@ -38,6 +38,23 @@ class MatchHandler(webapp2.RequestHandler):
         template = env.get_template('listener.html')
         self.response.out.write(template.render())
 
+class SubmitHandler(webapp2.RequestHandler):
+    def get(self):
+        template_vars = { 'name_of_game': self.request.get('game') }
+        template = env.get_template('submit.html')
+        self.response.out.write(template.render(template_vars))
+    def post(self):
+        results_template = env.get_template('submit.html')
+        template_variables = {
+            'q1':self.request.get("q1"),
+            'activity':self.request.get("activity"),
+            'teacher':self.request.get("teacher"),
+            'celebrity':self.request.get("celebrity"),
+            'show':self.request.get("show"),
+            'fun':self.request.get("fun"),
+            }
+        self.response.out.write(results_template.render(template_variables))
+
 
 
 app = webapp2.WSGIApplication([
@@ -46,5 +63,6 @@ app = webapp2.WSGIApplication([
     ('/quiz', QuizHandler),
     ('/chillroom', RoomHandler),
     ('/resources', ResourceHandler),
-    ('/match', MatchHandler)
+    ('/match', MatchHandler),
+    ('/submit', SubmitHandler)
     ], debug=True)
