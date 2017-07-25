@@ -29,6 +29,13 @@ p {
 
 }
 
+span {
+  color: black;
+  text-align: center;
+  font-family: 'Dosis';
+  font-size: 20px;
+}
+
 #welcome {
   margin-right: 200px;
   margin-left: 200px
@@ -122,17 +129,24 @@ font-style: italic;
 }
 
 #submit {
-
+margin-left: 930px;
+padding: 3px;
+font-family: 'Hind', sans-serif;
+font-size: 15px;
+background-color: white;
+color: black;
 }
 
 .question {
 text-align: left;
-padding-left: 550px;
+/*padding-left: 350px;*/
+margin-left: 400px;
 }
 
 .answers {
 font-family: 'Hind', sans-serif;
-padding-left: 585px;
+/*padding-left: 385px;*/
+margin-left: 410px;
 }
 
 .left_angled{
