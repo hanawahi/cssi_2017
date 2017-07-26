@@ -13,14 +13,18 @@
 
 
   <body>
+    <h1>College Confidence</h1>
+    {% include "navigation.html" %}
+
+
     <h1>Unclutter</h1>
-    <p> Welcome to Unclutter! One helpful technique that
+    <p class = "pagetext"> Welcome to Unclutter! One helpful technique that
     has been proven to help students destress is to unclutter their
     thoughts by writing them down, and then throwing it away. This works
     the same way venting to a friend does-- it feels great to just get
     things out.
     </p>
-    <p> The way Unclutter works is simple: we will pitch you prompts
+    <p class = "pagetext"> The way Unclutter works is simple: we will pitch you prompts
       and you can respond in any way you'd like-- write as little or as
       much as you desire. When you are finished with the prompt, you have
       the decision to 'burn' your response-- don't worry, we don't save
@@ -28,11 +32,11 @@
       computer, for yourself. If you don't like the prompt you are thrown,
       you can most definitely generate a new one! </p>
 
-      <p> Give it a try! </p>
+      <p class = "pagetext"> Give it a try! </p>
 
 
 
-      <span id = "prompt">  </span>
+      <center> <span class = "pagetext" id = "prompt">  </span> </center>
 
       <!--
       <form id="comment-form" action="javascript:void(0);">
@@ -72,12 +76,12 @@ function download(filename, text) {
 
 
 <form onsubmit="download(this['name'].value, this['text'].value)">
-  <textarea name="text"></textarea>
+  <center> <textarea id="textprompt" name="text"></textarea> </center> <!--prompt text field -->
   <br><br>
-  <input type="text" name="name" value="nameyourfile.txt">
-  <input type="submit" value="Download">
+  <input id="namefile" type="text" name="name" placeholder="nameyourfile.txt"> <!-- naming file field -->
+  <input class="button" type="submit" value="Download"> <!--download button -->
 
-  <button id="generate" type="button">Generate New</button>
+  <button class="button" id="generate" type="button">Generate New</button> <!-- generate button-->
 
 
 <!--//'Generate New' button -->

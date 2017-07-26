@@ -215,3 +215,67 @@ margin-left: 410px;
 #instructions{
   text-align: center;
 }
+
+
+/* (Hana's extra stuff)  */
+
+/*-------------BUTTON STUFF---------------------------------------------- */
+.button {
+  background-color: blue;
+  border: 2px solid black;
+  color: white;
+  font-family: 'Hind', sans-serif;
+  font-size: 20pt;
+  padding: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+}
+/*TO EDIT WHAT HAPPENS WHEN HOVERING OVER BUTTON: class : hover*/
+.button:hover {
+  background-color: green;
+  color: white;
+  /*font color*/
+  cursor: pointer;
+}
+/*----------BUTTON STUFF END-----------------------------------------------*/
+
+/*----------TEXT BOX STUFF-------------------------------------------------*/
+
+#namefile {
+/*regular box*/
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 5px solid black;
+  outline: none;
+  font-size: 15pt;
+  font-family: 'Hind', sans-serif;
+  margin-left: 17px;
+}
+
+#textprompt {
+/*text area*/
+  width: 500px;
+  height: 250px;
+  box-sizing: border-box;
+  border: 5px solid black;
+  font-size: 15pt;
+  font-family: 'Hind', sans-serif;
+  margin-left: 17px;
+  margin-top: 8px;
+  padding-top: 5px;
+  outline: none;
+
+}
+/*----------TEXT BOX STUFF END--------------------------------------------*/
+
+#prompt {
+  text-align: center;
+}
+
+.pagetext {
+  text-align: justify;
+  margin: 10px 20px 10px 20px
+}
