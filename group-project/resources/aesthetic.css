@@ -11,6 +11,12 @@ h2 {
   font-size: 30px;
 }
 
+h3 {
+  font-family: 'Hind', sans-serif;
+  font-size: 25px;
+  padding-left: 200px;
+}
+
 body {
   background-color: white;
 }
@@ -91,6 +97,11 @@ margin-left: 0.5em;
 cursor: pointer;
 }
 
+#subscore {
+  text-align: left;
+  padding-left: 600px;
+}
+
 #results {
 background: #dddada;
 color: 000000;
@@ -147,6 +158,16 @@ margin-left: 400px;
 font-family: 'Hind', sans-serif;
 /*padding-left: 385px;*/
 margin-left: 410px;
+}
+
+.disorder {
+  color: black;
+  text-align: left;
+  font-family: 'Dosis';
+  font-size: 20px;
+  padding-right: 200px;
+  padding-left: 200px;
+  padding-bottom: 20px;
 }
 
 .left_angled{

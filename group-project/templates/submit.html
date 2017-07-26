@@ -1,17 +1,67 @@
 <!DOCTYPE html>
 
 <html>
+<head>
 
+  <title>College Confidence</title>
+  <link rel="stylesheet" href="../resources/aesthetic.css">
+  <!--Link template, scripts (js), and styles here. --->
+
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Cabin|Hind|Dosis');
+  </style>
+
+</head>
   <body>
 
-        {% for k,v in quiz_results.items() %}
-          <h1>Key: {{k}}</h1>
-          <h2>Value: {{v}}</h2>
-        {% endfor %}
+    <h1>College Confidence</h1>
 
-        {{ common_answer }}
+    {% include "navigation.html" %}
 
-        <!-- <h1>Your results are</h1>
+    <h2>Your answers to this quiz indicate that you are most likely {{ common_answer }}.</h2>
+
+    <p><i>See the following subscore for more detailed results.
+      For more information, please see our <a href=info>mental health resources.</a></i></p>
+
+    {% for k,v in quiz_results.items() %}
+       <p id="subscore">{{k}} : {{v}}</p>
+     {% endfor %}
+
+    <h3>Depression</h3>
+
+    <p class="disorder">According to the Mayo Clinic, "depression is
+       a mood disorder that causes a persistent feeling of sadness and loss of interest."
+       If you feel depressed, talk to your doctor.
+       Depression is often treated with medication and/or therapy.</p>
+
+    <h3>Anxiety</h3>
+
+    <p class="disorder">According to the Mayo Clinic,
+      "people with anxiety disorders frequently have intense, excessive and persistent worry and fear about everyday situations"
+      and may experience panic attacks.</p>
+
+
+    <h3>Anorexia</h3>
+
+    <p class="disorder">According to the Mayo Clinic,
+      anorexia nervosa "is an eating disorder characterized by an abnormally low body weight,
+      intense fear of gaining weight and a distorted perception of body weight." Treatment for anorexia may include therapy and/or medication.</p>
+
+    <h3>You're ok!</h3>
+
+    <p class="disorder">Keep in mind, you may just be experiencing the normal stress of college.
+    Whether this is exams, social problems, or other issues, it may still be helpful
+    to talk to your doctor or a therapist to ensure you are healthy.
+    You can also utilize other de-stressing techniques such as <a href=ventbot>our Unclutter feature!</a></p>
+
+    <br>
+
+    <br>
+
+    <br>
+
+
+         <!-- <h1>Your results are</h1>
 
         <p>{{ quiz_results }}</p>
 
