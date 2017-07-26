@@ -8,7 +8,7 @@
     <!--Link template, scripts (js), and styles here. --->
 
     <script type="text/javascript" src="../resources/quizzes.js"></script>
-    <script type="text/javascript" src="../resources/quizzes2.js"></script>
+
 
     <style>
 @import url('https://fonts.googleapis.com/css?family=Cabin|Hind|Dosis');
@@ -21,14 +21,7 @@
 
     <h1>College Confidence</h1>
 
-    <ul id="navigation">
-      <li ><a class="nav" href=welcome.html>Home</a></li>&nbsp;
-      <li ><a class="nav" href=ventbot.html>Ventbot</a></li>&nbsp;
-      <li ><a class="nav" href=quizzes.html>Quizzes</a></li>&nbsp;
-      <li ><a class="nav" href=chillroom.html>Chill Room</a></li>&nbsp;
-      <li ><a class="nav" href=info.html>Mental Health Resources</a></li>&nbsp;
-      <li ><a class="nav" href=listener.html>Match Listener</a></li>&nbsp;
-    </ul>
+    {% include "navigation.html" %}
 
     <h2>What kind of help is right for you?</h2>
 
@@ -54,21 +47,31 @@
 
     <p class="question">2. What's on your mind?</p>
         <ul class="answers">
-        <input type="radio" name="q2" value="anxiety" id="q2a"><label for="q1a">I'm stressing about exams.</label><br/>
-        <input type="radio" name="q2" value="anorexia" id="q2b"><label for="q1b">I'm worrying about my weight.</label><br/>
-        <input type="radio" name="q2" value="depression" id="q2c"><label for="q1c">I'm just sad.</label><br/>
-        <input type="radio" name="q2" value="ok" id="q2d"><label for="q1d">I'm not really worried about anything.</label><br/>
+        <input type="radio" name="q2" value="anxiety" id="q2a"><label for="q2a">I'm stressing about exams.</label><br/>
+        <input type="radio" name="q2" value="anorexia" id="q2b"><label for="q2b">I'm worrying about my weight.</label><br/>
+        <input type="radio" name="q2" value="depression" id="q2c"><label for="q2c">I'm just sad.</label><br/>
+        <input type="radio" name="q2" value="ok" id="q2d"><label for="q2d">I'm not really worried about anything.</label><br/>
         </ul>
 
-    <p class="question">2. What's on your mind?</p>
+    <p class="question">3. Do you often feel nervous or restless?</p>
         <ul class="answers">
-        <input type="radio" name="q2" value="anxiety" id="q2a"><label for="q1a">I'm stressing about exams.</label><br/>
-        <input type="radio" name="q2" value="anorexia" id="q2b"><label for="q1b">I'm worrying about my weight.</label><br/>
-        <input type="radio" name="q2" value="depression" id="q2c"><label for="q1c">I'm just sad.</label><br/>
-        <input type="radio" name="q2" value="ok" id="q2d"><label for="q1d">I'm not really worried about anything.</label><br/>
+        <input type="radio" name="q3" value="anxiety" id="q3a"><label for="q3a">Yes.</label><br/>
+        <input type="radio" name="q3" value="ok" id="q3b"><label for="q3b">No.</label><br/>
         </ul>
 
-    <input type="submit" value="submit">
+    <p class="question">4. Do you ever feel so guilty about eating that it causes you to skip meals?</p>
+        <ul class="answers">
+        <input type="radio" name="q4" value="anorexia" id="q4a"><label for="q4a">Yes.</label><br/>
+        <input type="radio" name="q4" value="ok" id="q4b"><label for="q4b">No.</label><br/>
+        </ul>
+
+    <p class="question">5. Do you often experience difficulty concentrating or remembering details?</p>
+        <ul class="answers">
+        <input type="radio" name="q5" value="depression" id="q4a"><label for="q5a">Yes.</label><br/>
+        <input type="radio" name="q5" value="ok" id="q4b"><label for="q5b">No.</label><br/>
+        </ul>
+
+    <input type="submit" value="submit" id="submit">
 
     </form>
 

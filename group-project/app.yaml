@@ -9,9 +9,11 @@ handlers:
   static_files: favicon.ico
   upload: favicon\.ico
 
-- url: /resources/aesthetic\.css
-  static_files: resources/aesthetic.css
-  upload: resources/aesthetic\.css
+- url: /resources
+  static_dir: resources
+
+- url: /images
+  static_dir: images
 
 - url: .*
   script: main.app

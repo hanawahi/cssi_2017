@@ -1,4 +1,3 @@
-
 import webapp2
 import jinja2
 
@@ -28,15 +27,33 @@ class RoomHandler(webapp2.RequestHandler):
         template = env.get_template('chillroom.html')
         self.response.out.write(template.render())
 
+#Resources
+
 class ResourceHandler(webapp2.RequestHandler):
     def get(self):
         template = env.get_template('info.html')
         self.response.out.write(template.render())
 
-class MatchHandler(webapp2.RequestHandler):
+class DrugsHandler(webapp2.RequestHandler):
     def get(self):
-        template = env.get_template('listener.html')
+        template = env.get_template('drugs.html')
         self.response.out.write(template.render())
+
+class DepressionHandler(webapp2.RequestHandler):
+    def get(self):
+        template = env.get_template('depression.html')
+        self.response.out.write(template.render())
+
+class AnxiousHandler(webapp2.RequestHandler):
+    def get(self):
+        template = env.get_template('anxious.html')
+        self.response.out.write(template.render())
+
+class EatingHandler(webapp2.RequestHandler):
+    def get(self):
+        template = env.get_template('eating_disorder.html')
+        self.response.out.write(template.render())
+#####
 
 class SubmitHandler(webapp2.RequestHandler):
     def get(self):
@@ -47,11 +64,6 @@ class SubmitHandler(webapp2.RequestHandler):
         results_template = env.get_template('submit.html')
         template_variables = {
             'q1':self.request.get("q1"),
-            'activity':self.request.get("activity"),
-            'teacher':self.request.get("teacher"),
-            'celebrity':self.request.get("celebrity"),
-            'show':self.request.get("show"),
-            'fun':self.request.get("fun"),
             }
         self.response.out.write(results_template.render(template_variables))
 
@@ -59,10 +71,15 @@ class SubmitHandler(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
+    ('/welcome', MainHandler),
     ('/ventbot', VentHandler),
     ('/quiz', QuizHandler),
     ('/chillroom', RoomHandler),
-    ('/resources', ResourceHandler),
-    ('/match', MatchHandler),
-    ('/submit', SubmitHandler)
+    ('/info', ResourceHandler),
+    ('/submit', SubmitHandler),
+    ('/drug_abuse', DrugsHandler),
+    ('/depression', DepressionHandler),
+    ('/anxious', AnxiousHandler),
+    ('/eating_disorder', EatingHandler),
+
     ], debug=True)

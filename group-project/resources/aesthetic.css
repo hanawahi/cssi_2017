@@ -26,15 +26,22 @@ p {
   text-align: center;
   font-family: 'Dosis';
   font-size: 20px;
+
 }
+
+#welcome {
+  margin-right: 200px;
+  margin-left: 200px
+}
+
 
 #navigation {
     color: white;
     display: flex;
     list-style-type: none;
     margin: auto;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
     padding: 7px 50px;
     font-size: 20px;
     font-family: 'Cabin', sans-serif;
@@ -114,6 +121,10 @@ display: none;
 font-style: italic;
 }
 
+#submit {
+
+}
+
 .question {
 text-align: left;
 padding-left: 550px;
@@ -134,8 +145,8 @@ padding-left: 585px;
 
 #drug_abuse {
   margin-right: 100px;
-  height: 500px;
-  width: 500px;
+  height: 250px;
+  width: 250px;
   text-align: center;
   font-weight: bold;
   color: white;
@@ -150,8 +161,8 @@ padding-left: 585px;
 }
 
 #depression {
-  height: 500px;
-  width: 500px;
+  height: 250px;
+  width: 250px;
   text-align: center;
   font-weight: bold;
   color: white;
@@ -165,9 +176,9 @@ padding-left: 585px;
   border-radius: 10px;
 }
 
-#stress {
-  height: 500px;
-  width: 500px;
+#anxious {
+  height: 250px;
+  width: 250px;
   text-align: center;
   font-weight: bold;
   color: white;
@@ -182,8 +193,8 @@ padding-left: 585px;
 }
 
 #eating_disorder {
-  height: 500px;
-  width: 500px;
+  height: 250px;
+  width: 250px;
   text-align: center;
   color: white;
   font-weight: bold;
@@ -209,18 +220,29 @@ padding-left: 585px;
 #index table{
   position: absolute;
   font-size: 25px;
-  table-layout: fixed;
+  table-layout: center;
   border-spacing: 20px;
   color: white;
+  align-content: center;
+
 }
 
 #index td {
   cursor: pointer;
   text-align: center;
-  vertical-align: bottom;
+  vertical-align: center;
 }
 
 #index {
   margin-left: 100px;
   margin-bottom: 100px;
+
+}
+
+#drug_abuse, #depression{
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 300px;
+  margin-bottom: 300px;
+
 }
