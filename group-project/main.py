@@ -36,7 +36,7 @@ class ResourceHandler(webapp2.RequestHandler):
 class SubmitHandler(webapp2.RequestHandler):
     def post(self):
         results_template = env.get_template('submit.html')
-    
+
         quiz_results_dict = {}
 
         for i in range(1,10):
@@ -46,7 +46,9 @@ class SubmitHandler(webapp2.RequestHandler):
             else:
                 quiz_results_dict[value] = 1
 
+
         maximum = max(quiz_results_dict, key=quiz_results_dict.get)
+        # sorted_quiz_results_dict = sorted(quiz_results_dict, key=quiz_results_dict.get)
 
 
         template_variables = {

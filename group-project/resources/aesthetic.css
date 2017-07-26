@@ -101,7 +101,8 @@ cursor: pointer;
 
 #subscore {
   text-align: left;
-  padding-left: 600px;
+  margin-left: 600px;
+  /*padding-left: 630px;*/
 }
 
 #results {

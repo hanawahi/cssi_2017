@@ -3,7 +3,7 @@
 <html>
 <head>
 
-  <title>College Confidence</title>
+  <title>Quiz Results</title>
   <link rel="stylesheet" href="../resources/aesthetic.css">
   <!--Link template, scripts (js), and styles here. --->
 
@@ -18,14 +18,27 @@
 
     {% include "navigation.html" %}
 
-    <h2>Your answers to this quiz indicate that you are most likely {{ common_answer }}.</h2>
+    <h2>RESULT: Your answers indicate that {{ common_answer }}.</h2>
 
     <p><i>See the following subscore for more detailed results.
       For more information, please see our <a href=info>mental health resources.</a></i></p>
 
+      <h2>Subscore</h2>
+
+
     {% for k,v in quiz_results.items() %}
-       <p id="subscore">{{k}} : {{v}}</p>
-     {% endfor %}
+      {% if (k == "you may be depressed" and v == 0) %}
+        <p> "you might be just fine!" </p>
+      {% elif (k == "you may have anxiety" and v == 0) %}
+        <p> "you might be just fine!" </p>
+      {% elif (k == "you may have an eating disorder" and v == 0) %}
+        <p> "you might be just fine!" </p>
+      {% elif (k == "you may have alcohol/drug addiction" and v == 0) %}
+        <p> "you might be just fine!" </p>
+      {% else %}
+        <p id="subscore">{{k}} : {{v}}</p>
+      {% endif %}
+    {% endfor %}
 
     <h3>Depression</h3>
 
@@ -40,12 +53,21 @@
       "people with anxiety disorders frequently have intense, excessive and persistent worry and fear about everyday situations"
       and may experience panic attacks.</p>
 
-
-    <h3>Anorexia</h3>
+    <h3>Alcohol/Drug Abuse</h3>
 
     <p class="disorder">According to the Mayo Clinic,
-      anorexia nervosa "is an eating disorder characterized by an abnormally low body weight,
-      intense fear of gaining weight and a distorted perception of body weight." Treatment for anorexia may include therapy and/or medication.</p>
+      "Unhealthy alcohol use includes any alcohol use that puts your health or safety at risk or causes other alcohol-related problems"
+      and drug abuse "is a dependence on a legal or illegal drug or medication."
+      Treatment for addiction may include a detox, therapy, and/or medication.
+      </p>
+
+    <h3>Eating Disorders</h3>
+
+    <p class="disorder">According to the Mayo Clinic,
+      "Eating disorders are serious conditions related to persistent eating behaviors
+       that negatively impact your health, your emotions and your ability to function in important areas of life.
+       The most common eating disorders are anorexia nervosa, bulimia nervosa and binge-eating disorder."
+       Treatment for eating disorders may include therapy and/or medication.</p>
 
     <h3>You're ok!</h3>
 
