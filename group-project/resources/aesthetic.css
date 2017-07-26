@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Hind|Dosis');
+
 h1 {
   color: #001BD9;
   text-align: center;
@@ -9,6 +11,12 @@ h2 {
   text-align: center;
   font-family: 'Hind', sans-serif;
   font-size: 30px;
+}
+
+h3 {
+  font-family: 'Hind', sans-serif;
+  font-size: 25px;
+  padding-left: 200px;
 }
 
 body {
@@ -27,6 +35,13 @@ p {
   font-family: 'Dosis';
   font-size: 20px;
 
+}
+
+span {
+  color: black;
+  text-align: center;
+  font-family: 'Dosis';
+  font-size: 20px;
 }
 
 #welcome {
@@ -84,6 +99,12 @@ margin-left: 0.5em;
 cursor: pointer;
 }
 
+#subscore {
+  text-align: left;
+  margin-left: 600px;
+  /*padding-left: 630px;*/
+}
+
 #results {
 background: #dddada;
 color: 000000;
@@ -122,17 +143,34 @@ font-style: italic;
 }
 
 #submit {
-
+margin-left: 930px;
+padding: 3px;
+font-family: 'Hind', sans-serif;
+font-size: 15px;
+background-color: white;
+color: black;
 }
 
 .question {
 text-align: left;
-padding-left: 550px;
+/*padding-left: 350px;*/
+margin-left: 400px;
 }
 
 .answers {
 font-family: 'Hind', sans-serif;
-padding-left: 585px;
+/*padding-left: 385px;*/
+margin-left: 410px;
+}
+
+.disorder {
+  color: black;
+  text-align: left;
+  font-family: 'Dosis';
+  font-size: 20px;
+  padding-right: 200px;
+  padding-left: 200px;
+  padding-bottom: 20px;
 }
 
 .left_angled{
@@ -216,6 +254,7 @@ padding-left: 585px;
 }
 
 
+<<<<<<< HEAD
 
 #index table{
   position: absolute;
@@ -245,4 +284,67 @@ padding-left: 585px;
   margin-top: 300px;
   margin-bottom: 300px;
 
+=======
+/* (Hana's extra stuff)  */
+
+/*-------------BUTTON STUFF---------------------------------------------- */
+.button {
+  background-color: blue;
+  border: 2px solid black;
+  color: white;
+  font-family: 'Hind', sans-serif;
+  font-size: 20pt;
+  padding: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+}
+/*TO EDIT WHAT HAPPENS WHEN HOVERING OVER BUTTON: class : hover*/
+.button:hover {
+  background-color: green;
+  color: white;
+  /*font color*/
+  cursor: pointer;
+}
+/*----------BUTTON STUFF END-----------------------------------------------*/
+
+/*----------TEXT BOX STUFF-------------------------------------------------*/
+
+#namefile {
+/*regular box*/
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 5px solid black;
+  outline: none;
+  font-size: 15pt;
+  font-family: 'Hind', sans-serif;
+  margin-left: 17px;
+}
+
+#textprompt {
+/*text area*/
+  width: 500px;
+  height: 250px;
+  box-sizing: border-box;
+  border: 5px solid black;
+  font-size: 15pt;
+  font-family: 'Hind', sans-serif;
+  margin-left: 17px;
+  margin-top: 8px;
+  padding-top: 5px;
+  outline: none;
+
+}
+/*----------TEXT BOX STUFF END--------------------------------------------*/
+
+#prompt {
+  text-align: center;
+}
+
+.pagetext {
+  text-align: justify;
+  margin: 10px 20px 10px 20px
+>>>>>>> 46f413a1e6da3eb3f9f47b7245f33fbda689cd97
 }

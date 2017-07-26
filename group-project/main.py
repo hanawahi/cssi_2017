@@ -56,16 +56,33 @@ class EatingHandler(webapp2.RequestHandler):
 #####
 
 class SubmitHandler(webapp2.RequestHandler):
-    def get(self):
-        template_vars = { 'name_of_game': self.request.get('game') }
-        template = env.get_template('submit.html')
-        self.response.out.write(template.render(template_vars))
     def post(self):
         results_template = env.get_template('submit.html')
+
+        quiz_results_dict = {}
+
+        for i in range(1,10):
+            value = self.request.get("q"+str(i))
+            if value in quiz_results_dict:
+                quiz_results_dict[value] +=1
+            else:
+                quiz_results_dict[value] = 1
+
+
+        maximum = max(quiz_results_dict, key=quiz_results_dict.get)
+        # sorted_quiz_results_dict = sorted(quiz_results_dict, key=quiz_results_dict.get)
+
+
         template_variables = {
-            'q1':self.request.get("q1"),
-            }
+            'common_answer':maximum,
+            'quiz_results':quiz_results_dict
+        }
+
         self.response.out.write(results_template.render(template_variables))
+
+
+
+
 
 
 

@@ -1,12 +1,109 @@
 <!DOCTYPE html>
 
 <html>
+<head>
 
+  <title>Quiz Results</title>
+  <link rel="stylesheet" href="../resources/aesthetic.css">
+  <!--Link template, scripts (js), and styles here. --->
+
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Cabin|Hind|Dosis');
+  </style>
+
+</head>
   <body>
 
-        <h1>Your results are</h1>
+    <h1>College Confidence</h1>
 
-        <p>You most likely have {{ q1 }}.</p>
+    {% include "navigation.html" %}
+
+    <h2>RESULT: Your answers indicate that {{ common_answer }}.</h2>
+
+    <p><i>See the following subscore for more detailed results.
+      For more information, please see our <a href=info>mental health resources.</a></i></p>
+
+      <h2>Subscore</h2>
+
+
+    {% for k,v in quiz_results.items() %}
+      {% if (k == "you may be depressed" and v == 0) %}
+        <p> "you might be just fine!" </p>
+      {% elif (k == "you may have anxiety" and v == 0) %}
+        <p> "you might be just fine!" </p>
+      {% elif (k == "you may have an eating disorder" and v == 0) %}
+        <p> "you might be just fine!" </p>
+      {% elif (k == "you may have alcohol/drug addiction" and v == 0) %}
+        <p> "you might be just fine!" </p>
+      {% else %}
+        <p id="subscore">{{k}} : {{v}}</p>
+      {% endif %}
+    {% endfor %}
+
+    <h3>Depression</h3>
+
+    <p class="disorder">According to the Mayo Clinic, "depression is
+       a mood disorder that causes a persistent feeling of sadness and loss of interest."
+       If you feel depressed, talk to your doctor.
+       Depression is often treated with medication and/or therapy.</p>
+
+    <h3>Anxiety</h3>
+
+    <p class="disorder">According to the Mayo Clinic,
+      "people with anxiety disorders frequently have intense, excessive and persistent worry and fear about everyday situations"
+      and may experience panic attacks.</p>
+
+    <h3>Alcohol/Drug Abuse</h3>
+
+    <p class="disorder">According to the Mayo Clinic,
+      "Unhealthy alcohol use includes any alcohol use that puts your health or safety at risk or causes other alcohol-related problems"
+      and drug abuse "is a dependence on a legal or illegal drug or medication."
+      Treatment for addiction may include a detox, therapy, and/or medication.
+      </p>
+
+    <h3>Eating Disorders</h3>
+
+    <p class="disorder">According to the Mayo Clinic,
+      "Eating disorders are serious conditions related to persistent eating behaviors
+       that negatively impact your health, your emotions and your ability to function in important areas of life.
+       The most common eating disorders are anorexia nervosa, bulimia nervosa and binge-eating disorder."
+       Treatment for eating disorders may include therapy and/or medication.</p>
+
+    <h3>You're ok!</h3>
+
+    <p class="disorder">Keep in mind, you may just be experiencing the normal stress of college.
+    Whether this is exams, social problems, or other issues, it may still be helpful
+    to talk to your doctor or a therapist to ensure you are healthy.
+    You can also utilize other de-stressing techniques such as <a href=ventbot>our Unclutter feature!</a></p>
+
+    <br>
+
+    <br>
+
+    <br>
+
+
+         <!-- <h1>Your results are</h1>
+
+        <p>{{ quiz_results }}</p>
+
+        <p>{{ q2 }}</p>
+
+        <p>{{ q3 }}</p>
+
+        <p>{{ q4 }}</p>
+
+        <p>{{ q5 }}</p>
+
+        <p>{{ q6 }}</p>
+
+        <p>{{ q7 }}</p>
+
+        <p>{{ q8 }}</p>
+
+        <p>{{ q9 }}</p>
+
+        <p>{{ q10 }}</p> -->
 
   </body>
 

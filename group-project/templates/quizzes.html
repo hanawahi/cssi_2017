@@ -2,12 +2,15 @@
 
 <html>
   <head>
-    <title>Quizzes</title>
+    <title>Quiz</title>
 
-    <link rel="stylesheet" href="../resources/aesthetic.css">
+    <link rel="stylesheet" href="resources/aesthetic.css">
     <!--Link template, scripts (js), and styles here. --->
 
-    <script type="text/javascript" src="../resources/quizzes.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="resources/quizzes.js"></script>
+
 
 
     <style>
@@ -38,103 +41,112 @@
     <form action="/submit" method="post">
 
     <p class="question">1. How are you feeling right now?</p>
-        <ul class="answers">
-        <input type="radio" name="q1" value="ok" id="q1a"><label for="q1a">I'm ok.</label><br/>
-        <input type="radio" name="q1" value="depression" id="q1b"><label for="q1b">Sad</label><br/>
-        <input type="radio" name="q1" value="anxiety" id="q1c"><label for="q1c">Anxious and worried</label><br/>
-        <input type="radio" name="q1" value="social" id="q1d"><label for="q1d">I feel lonely.</label><br/>
+        <ul class="answers" id="q1">
+        <input type="radio" name="q1" value="you might be just fine!" id="q1a"><label for="q1a">Ok</label><br/>
+        <input type="radio" name="q1" value="you may be depressed" id="q1b"><label for="q1b">Sad</label><br/>
+        <input type="radio" name="q1" value="you may have anxiety" id="q1c"><label for="q1c">Anxious or worried</label><br/>
+        <input type="radio" name="q1" value="you may be depressed" id="q1d"><label for="q1d">Lonely</label><br/>
         </ul>
 
     <p class="question">2. What's on your mind?</p>
         <ul class="answers">
-        <input type="radio" name="q2" value="anxiety" id="q2a"><label for="q2a">I'm stressing about exams.</label><br/>
-        <input type="radio" name="q2" value="anorexia" id="q2b"><label for="q2b">I'm worrying about my weight.</label><br/>
-        <input type="radio" name="q2" value="depression" id="q2c"><label for="q2c">I'm just sad.</label><br/>
-        <input type="radio" name="q2" value="ok" id="q2d"><label for="q2d">I'm not really worried about anything.</label><br/>
+        <input type="radio" name="q2" value="you may have anxiety" id="q2a"><label for="q2a">I'm stressing out!</label><br/>
+        <input type="radio" name="q2" value="you may have an eating disorder" id="q2b"><label for="q2b">I'm worrying about my weight.</label><br/>
+        <input type="radio" name="q2" value="you may be depressed" id="q2c"><label for="q2c">I'm just sad.</label><br/>
+        <input type="radio" name="q2" value="you might be just fine!" id="q2d"><label for="q2d">I'm not really worried about anything.</label><br/>
         </ul>
 
-    <p class="question">3. Do you often feel nervous or restless?</p>
+    <p class="question">3. Do you often find yourself feeling more nervous or restless than others?</p>
         <ul class="answers">
-        <input type="radio" name="q3" value="anxiety" id="q3a"><label for="q3a">Yes.</label><br/>
-        <input type="radio" name="q3" value="ok" id="q3b"><label for="q3b">No.</label><br/>
+        <input type="radio" name="q3" value="you may have anxiety" id="q3a"><label for="q3a">Yes.</label><br/>
+        <input type="radio" name="q3" value="you might be just fine!" id="q3b"><label for="q3b">No.</label><br/>
         </ul>
 
     <p class="question">4. Do you ever feel so guilty about eating that it causes you to skip meals?</p>
         <ul class="answers">
-        <input type="radio" name="q4" value="anorexia" id="q4a"><label for="q4a">Yes.</label><br/>
-        <input type="radio" name="q4" value="ok" id="q4b"><label for="q4b">No.</label><br/>
+        <input type="radio" name="q4" value="you may have an eating disorder" id="q4a"><label for="q4a">Yes.</label><br/>
+        <input type="radio" name="q4" value="you might be just fine!" id="q4b"><label for="q4b">No.</label><br/>
         </ul>
 
     <p class="question">5. Do you often experience difficulty concentrating or remembering details?</p>
         <ul class="answers">
-        <input type="radio" name="q5" value="depression" id="q4a"><label for="q5a">Yes.</label><br/>
-        <input type="radio" name="q5" value="ok" id="q4b"><label for="q5b">No.</label><br/>
+        <input type="radio" name="q5" value="you may be depressed" id="q5a"><label for="q5a">Yes, I'm often distracted.</label><br/>
+        <input type="radio" name="q5" value="you may have alcohol/drug addiction" id="q5b"><label for="q5b">Yes, because I was drinking.</label><br/>
+        <input type="radio" name="q5" value="you might be just fine!" id="q5c"><label for="q5c">No.</label><br/>
         </ul>
 
-    <input type="submit" value="submit" id="submit">
+    <p class="question">6. Have you ever fainted or felt dizzy?</p>
+        <ul class="answers">
+        <input type="radio" name="q6" value="you may have an eating disorder" id="q6a"><label for="q6a">Yes, from lack of food.</label><br/>
+        <input type="radio" name="q6" value="you may have alcohol/drug addiction" id="q6b"><label for="q6b">Yes, I've blacked out from drinking.</label><br/>
+        <input type="radio" name="q6" value="you might be just fine!" id="q6c"><label for="q6c">No.</label><br/>
+        </ul>
+
+    <p class="question">7. Have you had suicidal thoughts or feelings of worthlessness?</p>
+        <ul class="answers">
+        <input type="radio" name="q7" value="you may be depressed" id="q7a"><label for="q7a">Yes.</label><br/>
+        <input type="radio" name="q7" value="you might be just fine!" id="q7b"><label for="q7b">No.</label><br/>
+        </ul>
+
+    <p class="question">8. Have you lost interest in hobbies or activities you once enjoyed?</p>
+        <ul class="answers">
+        <input type="radio" name="q8" value="you may be depressed" id="q8a"><label for="q8a">Yes.</label><br/>
+        <input type="radio" name="q8" value="you might be just fine!" id="q8b"><label for="q8b">No.</label><br/>
+        </ul>
+
+    <p class="question">9. Do you experience extreme sweating, trembling, or an increased heart rate?</p>
+        <ul class="answers">
+        <input type="radio" name="q9" value="you may have anxiety" id="q9a"><label for="q9a">Yes.</label><br/>
+        <input type="radio" name="q9" value="you might be just fine!" id="q9b"><label for="q9b">No.</label><br/>
+        </ul>
+
+    <p class="question">10. Do you ever breathe rapidly (hyperventilate) or have trouble breathing?</p>
+        <ul class="answers">
+        <input type="radio" name="q10" value="you may have anxiety" id="q10a"><label for="q10a">Yes.</label><br/>
+        <input type="radio" name="q10" value="you might be just fine!" id="q10b"><label for="q10b">No.</label><br/>
+        </ul>
+
+    <p class="question">11. Do you regularly find yourself thinking about your next drink?</p>
+        <ul class="answers">
+        <input type="radio" name="q11" value="you may have alcohol/drug addiction" id="q11a"><label for="q11a">Yes.</label><br/>
+        <input type="radio" name="q11" value="you might be just fine!" id="q11b"><label for="q11b">No.</label><br/>
+        </ul>
+
+    <p class="question">12. Do you ever drive while intoxicated?</p>
+        <ul class="answers">
+        <input type="radio" name="q12" value="you may have alcohol/drug addiction" id="q12a"><label for="q12a">Yes.</label><br/>
+        <input type="radio" name="q12" value="you might be just fine!" id="q12b"><label for="q12b">No.</label><br/>
+        </ul>
+
+    <p class="question">13. Have you ever binged (excessive eating) or purged (self-induced vomiting)?</p>
+        <ul class="answers">
+        <input type="radio" name="q13" value="you may have an eating disorder" id="q13a"><label for="q13a">Yes.</label><br/>
+        <input type="radio" name="q13" value="you might be just fine!" id="q13b"><label for="q13b">No.</label><br/>
+        </ul>
+
+    <p class="question">14. Do you feel you need more drugs or alcohol to get the same effect you experienced previously?</p>
+        <ul class="answers">
+        <input type="radio" name="q14" value="you may have alcohol/drug addiction" id="q14a"><label for="q14a">Yes.</label><br/>
+        <input type="radio" name="q14" value="you might be just fine!" id="q14b"><label for="q14b">No.</label><br/>
+        </ul>
+
+    <p class="question">15. Are you underweight?</p>
+        <ul class="answers">
+        <input type="radio" name="q15" value="you may have an eating disorder" id="q15a"><label for="q15a">Yes.</label><br/>
+        <input type="radio" name="q15" value="you might be just fine!" id="q15b"><label for="q15b">No.</label><br/>
+        </ul>
+
+
+
+
+
+    <input type="submit" value="Submit" id="submit">
 
     </form>
 
+    <!-- <button id="new_submit">Real Submit</button> -->
 
     <br/>
-
-
-
-    <div id="category1">
-    <p>
-    <strong>Question 1:</strong> The correct answer is the <strong>Answer 1</strong>.</p>
-    </div>
-
-    <div id="category2">
-    <p>
-    <strong>Question 2:</strong> The correct answer is <strong>Answer 2</strong>.</p>
-    </div>
-
-    <div id="category3">
-    <p>
-    <strong>Question 3:</strong> The correct answer is <strong>Answer 3</strong>.</p>
-    </div>
-
-    <div id="category4">
-    <p>
-    <strong>Question 4:</strong> The correct answer is <strong>Answer 4</strong>.</p>
-    </div>
-
-    <div id="category5">
-    <p>
-    <strong>Question 5:</strong> The correct answer is <strong>Answer 1</strong>.</p>
-    </div>
-
-    <div id="category6">
-    <p>
-    <strong>Question 6:</strong> The correct answer is <strong>Answer 2</strong>.</p>
-    </div>
-
-    <div id="category7">
-    <p>
-    <strong>Question 7:</strong> The correct answer is <strong>Answer 3</strong>.</p>
-    </div>
-
-    <div id="category8">
-    <p>
-    <strong>Question 8:</strong> The correct answer is <strong>Answer 4</strong>.</p>
-    </div>
-
-    <div id="category9">
-    <p>
-    <strong>Question 9:</strong> The correct answer is <strong>Answer 1</strong>.</p>
-    </div>
-
-    <div id="category10">
-    <p>
-    <strong>Question 10:</strong> The correct answer is <strong>Answer 2</strong>.</p>
-    </div>
-
-    <div id="category11">
-    <p>
-    You answered them all right!</p>
-    </div>
-
 
   </body>
 </html>
