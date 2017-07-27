@@ -55,6 +55,11 @@ class EatingHandler(webapp2.RequestHandler):
         self.response.out.write(template.render())
 #####
 
+def second(pair):
+    return pair[1]
+
+
+
 class SubmitHandler(webapp2.RequestHandler):
     def post(self):
         results_template = env.get_template('submit.html')
@@ -68,14 +73,15 @@ class SubmitHandler(webapp2.RequestHandler):
             else:
                 quiz_results_dict[value] = 1
 
-
         maximum = max(quiz_results_dict, key=quiz_results_dict.get)
-        # sorted_quiz_results_dict = sorted(quiz_results_dict, key=quiz_results_dict.get)
+        sorted_quiz_results_list = sorted(quiz_results_dict.items(), key=second, reverse=True)
+
+
 
 
         template_variables = {
             'common_answer':maximum,
-            'quiz_results':quiz_results_dict
+            'quiz_results':sorted_quiz_results_list
         }
 
         self.response.out.write(results_template.render(template_variables))
