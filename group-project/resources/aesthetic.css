@@ -1,15 +1,16 @@
 h1 {
   color: #001BD9;
   text-align: center;
-  font-size: 60px;
-  font-family: 'Hind', sans-serif;
+  font-size: 70px;
+  font-family: 'Zilla Slab';
+  font-weight: bold;
 }
 
 
 h2 {
   text-align: center;
   font-family: 'Hind', sans-serif;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: bolder;
 }
 
@@ -373,6 +374,19 @@ dl{
   /*font color*/
   cursor: pointer;
 }
+
+#home {
+  display: inline;
+  color: white;
+  text-decoration: none;
+  font-family: 'Hind', sans-serif;
+  margin: 20px;
+  }
+#home:hover{
+  color: #DFE3FA;
+
+  }
+
 /*----------BUTTON STUFF END-----------------------------------------------*/
 
 /*----------TEXT BOX STUFF-------------------------------------------------*/
