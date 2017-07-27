@@ -61,7 +61,11 @@ handlers:
   static_files: resources/background.cycle.js
   upload: resources/background\.cycle\.js
 
+- url: /resources
+  static_dir: resources
 
+- url: /images
+  static_dir: images
 
 - url: .*
   script: main.app
