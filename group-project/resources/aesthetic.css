@@ -40,8 +40,11 @@ body {
 p {
   color: black;
   text-align: center;
-  font-family: 'Dosis';
+  font-family: 'Dosis', sans-serif;
   font-size: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+
 
 }
 
@@ -168,14 +171,14 @@ font-style: italic;
   display: none;
 }
 
-/*#new_submit {
+#new_submit {
   margin-left: 930px;
-  padding: 3px;
+  /*padding: 3px;
   font-family: 'Hind', sans-serif;
   font-size: 15px;
   background-color: white;
-  color: black;
-}*/
+  color: black;*/
+}
 
 .question {
 text-align: left;
@@ -270,9 +273,6 @@ margin-left: 410px;
   padding-top: 0px;
 }
 
-
-
-
 #index table{
   position: absolute;
   margin: 0px auto;
@@ -307,8 +307,40 @@ margin-left: 410px;
 }
 
 #paragraph1{
-  text-align: justify;
+  text-align: left;
+  font-family: 'Dosis', sans-serif;
+  font-size: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
+
+ul{
+  list-style-type: square;
+  font-family: 'Dosis', sans-serif;
+  font-size: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#aligning
+{
+  text-align: left;
+  font-weight: 900;
+  text-decoration: underline;
+  font-size: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+dl{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+
+
+
 
 /* (Hana's extra stuff)  */
 
