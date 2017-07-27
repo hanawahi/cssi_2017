@@ -9,12 +9,18 @@ h1 {
 h2 {
   text-align: center;
   font-family: 'Hind', sans-serif;
-  font-size: 50px;
-  font-weight: bold;
+  font-size: 45px;
+  font-weight: bolder;
 }
 
 h3 {
   text-align: center;
+  font-family: 'Hind', sans-serif;
+  font-size: 30px;
+}
+
+h4 {
+  text-align: left;
   font-family: 'Hind', sans-serif;
   font-size: 30px;
 }
@@ -25,7 +31,7 @@ body {
 }
 
 
-#page {
+.page {
   margin-right: 200px;
   margin-left: 200px;
 
@@ -96,8 +102,16 @@ span {
   font-size: 18px;
 }
 
-.answers li {
+/*.answers li {
 list-style: upper-alpha;
+}*/
+
+#subscore {
+  color: black;
+  text-align: left;
+  font-family: 'Dosis';
+  font-size: 20px;
+  padding-left: 590px;
 }
 
 label {
@@ -105,7 +119,15 @@ margin-left: 0.5em;
 cursor: pointer;
 }
 
-#results {
+.disorder {
+  color: black;
+  text-align: left;
+  font-family: 'Dosis';
+  font-size: 20px;
+
+}
+
+/*#results {
 background: #dddada;
 color: 000000;
 padding: 3px;
@@ -140,7 +162,7 @@ display: none;
 #closing {
 display: none;
 font-style: italic;
-}
+}*/
 
 #submit {
   display: none;
