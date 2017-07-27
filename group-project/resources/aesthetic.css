@@ -168,14 +168,14 @@ font-style: italic;
   display: none;
 }
 
-/*#new_submit {
+#new_submit {
   margin-left: 930px;
-  padding: 3px;
+  /*padding: 3px;
   font-family: 'Hind', sans-serif;
   font-size: 15px;
   background-color: white;
-  color: black;
-}*/
+  color: black;*/
+}
 
 .question {
 text-align: left;
