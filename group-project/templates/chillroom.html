@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <title>Chill Room</title>
+    <title>UNWIND</title>
     <link rel = "stylesheet" href = "resources/aesthetic.css">
     <!--Link template, scripts (js), and styles here. --->
 
@@ -10,7 +10,73 @@
 
 
   <body>
-    <p> This is where the chill room will be built. </p>
+
+    <audio loop>
+      <source src="resources/manatees.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+
+<!------------------------------------------------------------------------------------->
+<!---=-=-=-=-=-=-=-=-=SLIDESHOW-------------------------------------------------------->
+<!------------------------------------------------------------------------------------->
+  <meta name="viewport" content="width=device-width">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="resources/background.cycle.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function() {
+
+
+
+          $("body").backgroundCycle({
+              imageUrls: [
+                'resources/images/one.jpg',
+                'resources/images/four.jpg',
+                'resources/images/five.jpg',
+                'resources/images/six.jpg',
+                'resources/images/seven.jpg',
+                'resources/images/eight.jpg',
+                'resources/images/nine.jpg'
+              ],
+              fadeSpeed: 2000,
+              duration: 5000,
+              backgroundSize: SCALING_MODE_COVER
+          });
+
+          $("audio").trigger('play');
+      });
+  </script>
+<!--<body style="margin: 0;"> -->
+  <div class='centre-container'>
+  </div>
+<!------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------->
+<!---words--->
+
+<div class="quote" id="content-1">This a quote.</div>
+<div class="quote" id="content-2">Remember to breathe.</div>
+<div class="quote" id="content-3">"Only fools freak out." -Not A Real Quote</div>
+<div class="quote" id="content-4">Sometimes you gotta do what you gotta do.</div>
+<div class="quote" id="content-5">Cut all the people you don't need out of your life.</div>
+<div class="quote" id="content-6">I hope by now you realize that all of these are really crap advice.</div>
+<div class="quote" id="content-7">This is the last one.</div>
+
+<script>
+var divs = $('div[id^="content-"]').hide(),
+    i = 0;
+
+(function cycle() {
+
+    divs.eq(i).fadeIn(1000)
+              .delay(3000)
+              .fadeOut(1000, cycle);
+
+    i = ++i % divs.length;
+})();
+</script>
+<!------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------->
 
   </body>
 </html>

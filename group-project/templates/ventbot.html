@@ -2,15 +2,12 @@
 
 <html>
   <head>
-    <title>Unclutter</title>
-    <link rel = "stylesheet" href = "../resources/aesthetic.css">
+    <title>VentBot</title>
+    <link rel = "stylesheet" href = "resources/aesthetic.css">
     <!--Link template, scripts (js), and styles here. --->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script type="text/javascript" src="../resources/textbox.js"></script>
 
-    <style>
-@import url('https://fonts.googleapis.com/css?family=Cabin|Hind|Dosis');
-    </style>
 
   </head>
 
@@ -20,7 +17,7 @@
     {% include "navigation.html" %}
 
 
-    <h2>Unclutter</h2>
+    <h1>Unclutter</h1>
     <p class = "pagetext"> Welcome to Unclutter! One helpful technique that
     has been proven to help students destress is to unclutter their
     thoughts by writing them down, and then throwing it away. This works
@@ -93,10 +90,18 @@ function download(filename, text) {
                 "Describe one memory that makes you happy.",
                 "What was the highlight of your past week?",
                 "When you're feeling down, what do you normally do to feel better? Describe it.",
-                "What's your morning routine?"];
+                "What's your morning routine? Walk us through every motion.",
+                "What do you do when you have a free moment in a busy day?",
+                "Tell me about your social circle-- are you close to friends? Co-workers? Family?",
+                "Where is one place you have always wanted to go? Tell me about it.",
+                "Do you have a memory that makes you laugh every time you think of it? What's the story?",
+                "Do you have a bucket list? Are there things that you really want to do? What's holding you back from doing them today?",
+                "What is one thing you can do today that would make your day even better? What is holding you back?",
+                "If you were to rate this past week, what would you score? Are you satisfied with this score? What could you do to make it better?"];
   var n = getInt();
   var randPrompt = String(prompts[n]);
   $('#generate').click((event) => {
+    document.getElementById('textprompt').value = "";
     n = getInt();
     randPrompt = String(prompts[n]);
     event.preventDefault();
@@ -108,7 +113,7 @@ function download(filename, text) {
 
 //random int generator.
    function getInt() {
-        return Math.floor(Math.random() * (2 - 0 + 1)) + 0;
+        return Math.floor(Math.random() * (11 - 0 + 1)) + 0;
 }
   </script>
 <!--//end generate new button -->

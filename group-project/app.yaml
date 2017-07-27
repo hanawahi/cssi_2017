@@ -9,11 +9,59 @@ handlers:
   static_files: favicon.ico
   upload: favicon\.ico
 
-- url: /resources
-  static_dir: resources
+- url: /resources/aesthetic\.css
+  static_files: resources/aesthetic.css
+  upload: resources/aesthetic\.css
 
-- url: /images
-  static_dir: images
+- url: /resources/textbox\.js
+  static_files: resources/textbox.js
+  upload: resources/textbox\.js
+
+- url: /resources/manatees\.mp3
+  static_files: resources/manatees.mp3
+  upload: resources/manatees\.mp3
+
+- url: /resources/images/one\.jpg
+  static_files: resources/images/one.jpg
+  upload: resources/images/one\.jpg
+
+- url: /resources/images/two\.jpg
+  static_files: resources/images/two.jpg
+  upload: resources/images/two\.jpg
+
+- url: /resources/images/three\.jpg
+  static_files: resources/images/three.jpg
+  upload: resources/images/three\.jpg
+
+- url: /resources/images/four\.jpg
+  static_files: resources/images/four.jpg
+  upload: resources/images/four\.jpg
+
+- url: /resources/images/five\.jpg
+  static_files: resources/images/five.jpg
+  upload: resources/images/five\.jpg
+
+- url: /resources/images/six\.jpg
+  static_files: resources/images/six.jpg
+  upload: resources/images/six\.jpg
+
+- url: /resources/images/seven\.jpg
+  static_files: resources/images/seven.jpg
+  upload: resources/images/seven\.jpg
+
+- url: /resources/images/eight\.jpg
+  static_files: resources/images/eight.jpg
+  upload: resources/images/eight\.jpg
+
+- url: /resources/images/nine\.jpg
+  static_files: resources/images/nine.jpg
+  upload: resources/images/nine\.jpg
+
+- url: /resources/background\.cycle\.js
+  static_files: resources/background.cycle.js
+  upload: resources/background\.cycle\.js
+
+
 
 - url: .*
   script: main.app
