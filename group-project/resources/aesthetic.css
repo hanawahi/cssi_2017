@@ -292,21 +292,21 @@ margin-left: 410px;
 
 /*-------------BUTTON STUFF---------------------------------------------- */
 .button {
-  background-color: #2038DE;
-  border: 1px solid black;
+  background-color: #001BD9;
   color: white;
-  font-family: 'Hind', sans-serif;
-  font-size: 20pt;
-  padding: 5px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 14pt;
   padding-left: 40px;
   padding-right: 40px;
   text-align: center;
   text-decoration: none;
   outline: none;
+  border: none;
+  border-radius: 10px;
 }
 /*TO EDIT WHAT HAPPENS WHEN HOVERING OVER BUTTON: class : hover*/
 .button:hover {
-  background-color: #001BD9;
+  background-color: #3041B7;
   color: white;
   /*font color*/
   cursor: pointer;
@@ -317,27 +317,29 @@ margin-left: 410px;
 
 #namefile {
 /*regular box*/
-  padding: 12px 20px;
   box-sizing: border-box;
-  border: 5px solid black;
+  border: 2px solid black;
   outline: none;
-  font-size: 15pt;
-  font-family: 'Hind', sans-serif;
+  font-size: 14pt;
+  font-family: 'Dosis', sans-serif;
   margin-left: 17px;
+  border-radius: 10px;
+  padding-left: 1px;
 }
 
 #textprompt {
 /*text area*/
-  width: 500px;
+  width: 515px;
   height: 250px;
   box-sizing: border-box;
-  border: 5px solid black;
+  border: 1.5px solid black;
   font-size: 15pt;
-  font-family: 'Hind', sans-serif;
+  font-family: 'Dosis', sans-serif;
   margin-left: 17px;
   margin-top: 8px;
   padding-top: 5px;
   outline: none;
+  border-radius: 10px;
 
 }
 /*----------TEXT BOX STUFF END--------------------------------------------*/
@@ -348,7 +350,8 @@ margin-left: 410px;
 
 .pagetext {
   text-align: justify;
-  margin: 10px 20px 10px 20px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 

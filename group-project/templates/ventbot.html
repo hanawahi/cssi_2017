@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <title>VentBot</title>
+    <title>UNCLUTTER</title>
     <link rel = "stylesheet" href = "resources/aesthetic.css">
     <!--Link template, scripts (js), and styles here. --->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -37,30 +37,20 @@
 
       <p class = "pagetext"> Give it a try! </p>
 
+      <br>
 
-
-      <center> <span class = "pagetext" id = "prompt">  </span> </center>
-
-      <!--
-      <form id="comment-form" action="javascript:void(0);">
-       <textarea id="comment-content" name="content"></textarea>
-       <input type="submit" value="Done">
+    <p class = "pagetext"><i> <b>Directions: </b>Hit "Generate New" to generate your prompt.
+      Type out your response. When you are finished, name and download your
+      answer, or hit the generate again to recieve a new prompt! </i></p>
 
 
 
-     </form>
+      <br><br><br>
 
 
-   <h2>Your Entry:</h2>
-     <div id="comments">
-       <p id="no-comments">You haven't entered your prompt yet.</p>
-       <button id="download" type = 'button'>Download Response</button>
-<script> $("#download").hide(); </script>
 
--->
+      <center> <span class = "pagetext" id = "prompt">Hit "Generate New" to begin!</span> </center>
 
-
-<!--//Downloading-->
 <script>
 function download(filename, text) {
   var element = document.createElement('a');
@@ -79,12 +69,14 @@ function download(filename, text) {
 
 
 <form onsubmit="download(this['name'].value, this['text'].value)">
-  <center> <textarea id="textprompt" name="text"></textarea> </center> <!--prompt text field -->
+  <center>
+  <textarea id="textprompt" name="text"></textarea> <!--prompt text field -->
   <br><br>
-  <input id="namefile" type="text" name="name" placeholder="nameyourfile.txt"> <!-- naming file field -->
+  <input id="namefile" type="text" name="name" placeholder=" nameyourfile.txt"> <!-- naming file field -->
   <input class="button" type="submit" value="Download"> <!--download button -->
 
   <button class="button" id="generate" type="button">Generate New</button> <!-- generate button-->
+  </center>
 
 
 <!--//'Generate New' button -->
