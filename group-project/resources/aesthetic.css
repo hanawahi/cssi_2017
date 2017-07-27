@@ -287,8 +287,8 @@ margin-left: 410px;
 
 /*-------------BUTTON STUFF---------------------------------------------- */
 .button {
-  background-color: blue;
-  border: 2px solid black;
+  background-color: #2038DE;
+  border: 1px solid black;
   color: white;
   font-family: 'Hind', sans-serif;
   font-size: 20pt;
@@ -301,7 +301,7 @@ margin-left: 410px;
 }
 /*TO EDIT WHAT HAPPENS WHEN HOVERING OVER BUTTON: class : hover*/
 .button:hover {
-  background-color: green;
+  background-color: #001BD9;
   color: white;
   /*font color*/
   cursor: pointer;
