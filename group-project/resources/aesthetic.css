@@ -143,12 +143,16 @@ font-style: italic;
 }
 
 #submit {
-margin-left: 930px;
-padding: 3px;
-font-family: 'Hind', sans-serif;
-font-size: 15px;
-background-color: white;
-color: black;
+  display: none;
+}
+
+#new_submit {
+  margin-left: 930px;
+  padding: 3px;
+  font-family: 'Hind', sans-serif;
+  font-size: 15px;
+  background-color: white;
+  color: black;
 }
 
 .question {
@@ -346,5 +350,6 @@ margin-left: 410px;
 .pagetext {
   text-align: justify;
   margin: 10px 20px 10px 20px
+
 >>>>>>> 46f413a1e6da3eb3f9f47b7245f33fbda689cd97
 }
