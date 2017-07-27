@@ -188,9 +188,10 @@ margin-left: 400px;
 }
 
 .answers {
-font-family: 'Hind', sans-serif;
 /*padding-left: 385px;*/
-margin-left: 410px;
+margin-left: 430px;
+font-family: Dosis, sans-serif;
+font-size: 20px;
 }
 
 .left_angled{
