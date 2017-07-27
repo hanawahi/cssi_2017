@@ -30,14 +30,14 @@ $(document).ready(function(){
 
 /* -------------  makes stress tilt on mouseover  ---------------------- */
 $(document).ready(function(){
-  $("#stress").mouseover(function(){
-      $("#stress").addClass("left_angled");
+  $("#anxious").mouseover(function(){
+      $("#anxious").addClass("left_angled");
   });
 });
 
 $(document).ready(function(){
-  $("#stress").mouseleave(function(){
-      $("#stress").removeClass("left_angled");
+  $("#anxious").mouseleave(function(){
+      $("#anxious").removeClass("left_angled");
   });
 });
 
