@@ -333,6 +333,19 @@ margin-left: 410px;
   /*font color*/
   cursor: pointer;
 }
+
+#home {
+  display: inline;
+  color: white;
+  text-decoration: none;
+  font-family: 'Hind', sans-serif;
+  margin: 20px;
+  }
+#home:hover{
+  color: #DFE3FA;
+
+  }
+
 /*----------BUTTON STUFF END-----------------------------------------------*/
 
 /*----------TEXT BOX STUFF-------------------------------------------------*/
