@@ -70,6 +70,11 @@ span {
 
   }
 
+.nav:hover{
+    color: #DFE3FA;
+
+}
+
 
 .nav {
     display: inline;
