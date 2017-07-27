@@ -18,13 +18,13 @@
 
     {% include "navigation.html" %}
 
-    <h2>RESULT: Your answers indicate that {{ common_answer }}.</h2>
+    <h3>RESULT: Your answers indicate that {{ common_answer }}.</h3>
 
     <p><i>See the following subscore for more detailed results.<br>
       Talk to your doctor about any symptoms or concerns you may have.<br>
       For more information, please see our <a href=info>mental health resources.</a></i></p>
 
-      <h2>Subscore</h2>
+      <h3>Subscore</h3>
 
 
     {% for k,v in quiz_results %}
@@ -41,49 +41,51 @@
       {% endif %}
     {% endfor %}
 
-    <h3>Depression</h3>
+    <div class="page">
 
-    <p class="disorder">According to the Mayo Clinic, "depression is
-       a mood disorder that causes a persistent feeling of sadness and loss of interest."
-       If you feel depressed, talk to your doctor.
-       Depression is often treated with medication and/or therapy.</p>
+      <h4>Depression</h4>
 
-    <h3>Anxiety</h3>
+      <p class="disorder">According to the Mayo Clinic, "depression is
+         a mood disorder that causes a persistent feeling of sadness and loss of interest."
+         If you feel depressed, talk to your doctor.
+         Depression is often treated with medication and/or therapy.</p>
 
-    <p class="disorder">According to the Mayo Clinic,
-      "people with anxiety disorders frequently have intense, excessive and persistent worry and fear about everyday situations"
-      and may experience panic attacks. Treatment may include therapy and/or medication.</p>
+      <h4>Anxiety</h4>
 
-    <h3>Alcohol/Drug Abuse</h3>
+      <p class="disorder">According to the Mayo Clinic,
+        "people with anxiety disorders frequently have intense, excessive and persistent worry and fear about everyday situations"
+        and may experience panic attacks. Treatment may include therapy and/or medication.</p>
 
-    <p class="disorder">According to the Mayo Clinic,
-      "Unhealthy alcohol use includes any alcohol use that puts your health or safety at risk or causes other alcohol-related problems"
-      and drug abuse "is a dependence on a legal or illegal drug or medication."
-      Treatment for addiction may include a detox, therapy, and/or medication.
-      </p>
+      <h4>Alcohol/Drug Abuse</h4>
 
-    <h3>Eating Disorders</h3>
+      <p class="disorder">According to the Mayo Clinic,
+        "Unhealthy alcohol use includes any alcohol use that puts your health or safety at risk or causes other alcohol-related problems"
+        and drug abuse "is a dependence on a legal or illegal drug or medication."
+        Treatment for addiction may include a detox, therapy, and/or medication.
+        </p>
 
-    <p class="disorder">According to the Mayo Clinic,
-      "Eating disorders are serious conditions related to persistent eating behaviors
-       that negatively impact your health, your emotions and your ability to function in important areas of life.
-       The most common eating disorders are anorexia nervosa, bulimia nervosa and binge-eating disorder."
-       Treatment for eating disorders may include therapy and/or medication.</p>
+      <h4>Eating Disorders</h4>
 
-    <h3>You're ok!</h3>
+      <p class="disorder">According to the Mayo Clinic,
+        "Eating disorders are serious conditions related to persistent eating behaviors
+         that negatively impact your health, your emotions and your ability to function in important areas of life.
+         The most common eating disorders are anorexia nervosa, bulimia nervosa and binge-eating disorder."
+         Treatment for eating disorders may include therapy and/or medication.</p>
 
-    <p class="disorder">Keep in mind, you may just be experiencing the normal stress of college.
-    Whether this is exams, social problems, or other issues, it may still be helpful
-    to talk to your doctor or a therapist to ensure you are healthy.
-    You can also utilize other de-stressing techniques such as our <a href=ventbot>Unclutter</a> and <a href=chillroom>Unwind</a> features!</p>
+      <h4>You're ok!</h4>
 
-    <br>
+      <p class="disorder">Keep in mind, you may just be experiencing the normal stress of college.
+      Whether this is exams, social problems, or other issues, it may still be helpful
+      to talk to your doctor or a therapist to ensure you are healthy.
+      You can also utilize other de-stressing techniques such as our <a href=ventbot>Unclutter</a> and <a href=chillroom>Unwind</a> features!</p>
 
-    <br>
+      <br>
 
-    <br>
+      <br>
 
+      <br>
 
+    <div class="page">
          <!-- <h1>Your results are</h1>
 
         <p>{{ quiz_results }}</p>
