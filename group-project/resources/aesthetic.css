@@ -13,6 +13,7 @@ h2 {
 
 body {
   background-color: white;
+  margin: 10px 20px 10px 20px;
 }
 
 #page {
@@ -37,8 +38,7 @@ span {
 }
 
 #welcome {
-  margin-right: 200px;
-  margin-left: 200px
+  text-align: center;
 }
 
 
